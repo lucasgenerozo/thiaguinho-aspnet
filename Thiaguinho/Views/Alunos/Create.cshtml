@@ -1,0 +1,21 @@
+﻿@model Thiaguinho.Models.Aluno;
+
+<form asp-action="Create">
+    <div class="my-1">
+        <label class="form-label" for="Nome">Nome:
+            <input type="text" asp-for="Nome" required />
+        </label>
+    </div>
+    <div class="my-1">
+        <label class="form-label" for="Email">Email:
+            <input type="email" asp-for="Email" required />
+        </label>
+    </div>
+    <div class="my-1">
+        <label class="form-label" for="DataNascimento">Data de Nascimento:
+            <input type="date" asp-for="DataNascimento" required />
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Gravar</button>
+</form>
